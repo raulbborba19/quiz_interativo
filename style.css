@@ -34,10 +34,14 @@ h1 {
     color: var(--cor-destaque);
 }
 
-.caixa-alternativa {
+.caixa-alternativas {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.caixa-resultado {
+    display: none;
 }
 
 .caixa-resultadp.mostrar {
