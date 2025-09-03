@@ -38,5 +38,6 @@ function mostraAlternativa() {}
 
 function mostraResultado() {
     caixaPerguntas.textContent = `Após tudo isso, ${nome} descobriu que`;
-    textResultado.text
+    textResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent
 }
