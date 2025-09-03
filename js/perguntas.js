@@ -76,7 +76,7 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "",
+        enunciado: "pergunta 5",
         alternativas: [
             {
                 texto: "",  
