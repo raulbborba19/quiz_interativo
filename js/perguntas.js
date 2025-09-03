@@ -94,23 +94,4 @@ const perguntas = [
             }
         ]
     },
-    {
-        enunciado: "pergunta 5",
-        alternativas: [
-            {
-                texto: "",  
-                afirmacao: [
-                    "",  
-                    ""   
-                ]
-            },
-            {
-                texto: "",
-                afirmacao: [
-                    ""
-                    ""
-                ]
-            }
-        ]
-    },
 ]
