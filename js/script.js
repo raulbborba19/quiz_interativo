@@ -68,3 +68,11 @@ function jogarNovamente() {
     caixaResultado.classList("mostrar");
     mostraPergunta();
 }
+
+function substituloNome() {
+    for(const pergunta of perguntas) {
+        pergunta.enunciado = pergunta.enunciado.replace(/você/g, nome);
+    }
+}
+
+substituloNome();
