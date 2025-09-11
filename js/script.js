@@ -44,8 +44,27 @@ function mostraAlternativa() {
     }
 }
 
+function respostaSelecionada(opcaoSelecionada) {
+    const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
+    historiaFinal += afirmacoes + " ";
+    if(opcaoSelecionada.proxima !== underfined) {
+        atual = opcaoSelecionada.proxima;
+    }else {
+        mostraResultado();
+        return;
+    }
+    mostraPergunta();
+}
+
 function mostraResultado() {
     caixaPerguntas.textContent = `Após tudo isso, ${nome} descobriu que`;
     textResultado.textContent = historiaFinal;
     caixaAlternativas.textContent
+}
+
+function jogarNovamente() {
+    atual = 0;
+    historiaFinal = "";
+    caixaResultado.classList("mostrar");
+    mostraPergunta();
 }
