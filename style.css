@@ -8,7 +8,7 @@
     --cor-texto: #eeffd7;
 }
 
-body{
+body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
     font-family: "Inter", sans-serif;
@@ -39,6 +39,7 @@ button {
     color: var(--cor-texto);
     border: none;
     border-radius: 15px;
+    padding: 15px;
     transition: background-color 0.3s;
 }
 
