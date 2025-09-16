@@ -20,9 +20,9 @@ function iniciaJogo() {
     atual = 0;
     historiaFinal = "";
     teleInicial.style.display = 'none';
-    caixaPerguntas.classList.remove(".mostrar")
-    caixaAlternativas.classList.remove(".mostrar")
-    caixaResultado.classList.remove(".mostrar")
+    caixaPerguntas.classList.remove("mostrar");
+    caixaAlternativas.classList.remove("mostrar");
+    caixaResultado.classList.remove("mostrar");
     mostraPergunta();
 }
 
@@ -40,7 +40,9 @@ function mostraPergunta() {
 function mostraAlternativa() {
     for (const alternativa of perguntaAtual.alternativas){
         const botaoAlternativas = document.createElement("button");
-        botaoAlternativas.textContent
+        botaoAlternativas.textContent  - alternativa.texto;
+        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
+        caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
 
@@ -59,7 +61,9 @@ function respostaSelecionada(opcaoSelecionada) {
 function mostraResultado() {
     caixaPerguntas.textContent = `Após tudo isso, ${nome} descobriu que`;
     textResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent
+    caixaAlternativas.textContent = "";
+    caixaResultado.classList.add("mostrar");
+    botaoJogarNovamente.addEventListener("click", jogarNovamente);
 }
 
 function jogarNovamente() {
@@ -74,5 +78,4 @@ function substituloNome() {
         pergunta.enunciado = pergunta.enunciado.replace(/você/g, nome);
     }
 }
-
 substituloNome();

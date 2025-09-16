@@ -7,14 +7,16 @@ const perguntas = [
                 afirmacao: [
                     "",  //comentário para a resposta
                     ""   //segundo comentário
-                ]
+                ],
+                proxima 1,
             },
             {
                 texto: "",
                 afirmacao: [
                     ""
                     ""
-                ]
+                ],
+                proxima 1,
             }
         ]
     },
@@ -26,14 +28,16 @@ const perguntas = [
                 afirmacao: [
                     "",  
                     ""   
-                ]
+                ],
+                proxima 2,
             },
             {
                 texto: "",
                 afirmacao: [
                     ""
                     ""
-                ]
+                ],
+                proxima 2,
             }
         ]
     },
@@ -45,14 +49,16 @@ const perguntas = [
                 afirmacao: [
                     "",  
                     ""   
-                ]
+                ],
+                proxima 3,
             },
             {
                 texto: "",
                 afirmacao: [
                     ""
                     ""
-                ]
+                ],
+                proxima 3,
             }
         ]
     },
@@ -64,14 +70,16 @@ const perguntas = [
                 afirmacao: [
                     "",  
                     ""   
-                ]
+                ],
+                proxima 4,
             },
             {
                 texto: "",
                 afirmacao: [
                     ""
                     ""
-                ]
+                ],
+                proxima 4,
             }
         ]
     },
